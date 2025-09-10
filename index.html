@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastel Ice Cream</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Mochiy Pop One', sans-serif;
+      background-color: #fffafc;
+      color: #444;
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background: url("images/トップ画像.png") no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background: rgba(255, 182, 193, 0.6);
+      padding: 15px 40px;
+      border-radius: 25px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #ff69b4;
+    }
+
+    /* フレーバー一覧 */
+    .flavors {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .flavor {
+      background: #fff;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .flavor:hover {
+      transform: scale(1.05);
+    }
+
+    .flavor img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* トッピング */
+    #toppings {
+      background: #fff0f6;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .toppings-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .toppings-list li {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #444;
+    }
+
+    /* 店舗情報 */
+    #shops {
+      background: #f0faff;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .shops-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #ffe4f1;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pastel Ice Cream</h1>
+  </header>
+
+  <main>
+    <h2>フレーバー</h2>
+    <section class="flavors">
+      <div class="flavor">
+        <img src="images/いちご.png" alt="いちご">
+        <p>ストロベリー・ラブリードロップ</p>
+      </div>
+      <div class="flavor">
+        <img src="images/ピーチ.png" alt="ピーチ">
+        <p>ピーチ・ドリームパラダイス</p>
+      </div>
+      <div class="flavor">
+        <img src="images/コットンキャンディ.png" alt="コットンキャンディ">
+        <p>コットンキャンディ・クラウド</p>
+      </div>
+      <div class="flavor">
+        <img src="images/さくらんぼ.png" alt="さくらんぼ">
+        <p>チェリー・マジカルスター</p>
+      </div>
+      <div class="flavor">
+        <img src="images/抹茶.png" alt="抹茶">
+        <p>抹茶メロウ・セレニティ</p>
+      </div>
+      <div class="flavor">
+        <img src="images/レモン.png" alt="レモン">
+        <p>レモン・サンシャインスプラッシュ</p>
+      </div>
+      <div class="flavor">
+        <img src="images/ブルーベリー.png" alt="ブルーベリー">
+        <p>ブルーベリー・ミルキームーン</p>
+      </div>
+      <div class="flavor">
+        <img src="images/マンゴー.png" alt="マンゴー">
+        <p>マンゴー・トロピカルブリーズ</p>
+      </div>
+    </section>
+
+    <!-- トッピング -->
+    <section id="toppings">
+      <h2>トッピング</h2>
+      <ul class="toppings-list">
+        <li>🍫 チョコスプレー ＋100円</li>
+        <li>🍬 カラフルマシュマロ ＋120円</li>
+        <li>🍪 サクサククッキー ＋150円</li>
+        <li>🥜 アーモンド＆ナッツ ＋180円</li>
+        <li>🍦 ホイップクリーム ＋100円</li>
+        <li>🍯 キャラメルソース ＋130円</li>
+      </ul>
+    </section>
+
+    <!-- 店舗情報 -->
+    <section id="shops">
+      <h2>店舗情報</h2>
+      <p>全国に10店舗を展開中！あなたの街の近くでも。</p>
+      <div class="shops-grid">
+        <div>🍦 東京・原宿店</div>
+        <div>🍦 東京・渋谷店</div>
+        <div>🍦 大阪・心斎橋店</div>
+        <div>🍦 名古屋・栄店</div>
+        <div>🍦 福岡・天神店</div>
+        <div>🍦 札幌・大通店</div>
+        <div>🍦 京都・四条店</div>
+        <div>🍦 横浜・みなとみらい店</div>
+        <div>🍦 神戸・三宮店</div>
+        <div>🍦 広島・本通店</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>このサイトはフィクションです。実在の店舗とは関係ありません。</p>
+  </footer>
+</body>
+</html>
